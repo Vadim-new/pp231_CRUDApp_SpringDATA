@@ -9,24 +9,34 @@
         <table th:align="center" th:border="0" th:width="400">
             <caption><h2>Добавить пользователя</h2></caption>
             <tr>
-                <th th:align="right">Имя</th>
-                <th th:align="left"><input type="text" th:field="*{name}" id="name"/></th>
+                <th th:align="right" valign="top">Имя</th>
+                <th th:align="left"><input type="text" th:field="*{name}" id="name"/>
+                <p style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
+                </th>
             </tr>
             <tr>
-                <th th:align="right">Фамилия</th>
-                <th th:align="left"><input type="text" th:field="*{surname}" id="surname"/></th>
+                <th th:align="right" valign="top">Фамилия</th>
+                <th th:align="left"><input type="text" th:field="*{surname}" id="surname"/>
+                    <p style="color:red" th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}"></p>
+                </th>
             </tr>
             <tr>
-                <th th:align="right">Возраст</th>
-                <th th:align="left"><input type="text" th:field="*{age}" id="age"/></th>
+                <th th:align="right" valign="top">Возраст</th>
+                <th th:align="left"><input type="text" th:field="*{age}" id="age"/>
+                    <p style="color:red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></p>
+                </th>
             </tr>
             <tr>
-                <th th:align="right">Телефон</th>
-                <th th:align="left"><input type="text" th:field="*{phoneNumber}" id="phoneNumber"/></th>
+                <th th:align="right" valign="top">Телефон</th>
+                <th th:align="left"><input type="text" th:field="*{phoneNumber}" id="phoneNumber"/>
+                    <p style="color:red" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></p>
+                </th>
             </tr>
             <tr>
-                <th th:align="right">Email</th>
-                <th th:align="left"><input type="text" th:field="*{email}" id="email"/></th>
+                <th th:align="right" valign="top">Email</th>
+                <th th:align="left"><input type="text" th:field="*{email}" id="email"/>
+                    <p style="color:red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
+                </th>
             </tr>
             <tr>
                 <th th:colspan="2"><input type="submit" value="Добавить"/></th>

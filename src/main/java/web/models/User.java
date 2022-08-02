@@ -1,6 +1,10 @@
 package web.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 import java.util.Objects;
 
 @Entity
@@ -11,14 +15,26 @@ public class User {
     @Column(name = "id", nullable = false, unique = true)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @NotEmpty(message = "Имя не может быть пустым")
+    @Size(min = 2, max = 30, message = "Имя должно быть от 2 до 30 символов")
     @Column(name = "name", length = 50, nullable = false)
     private String name;
+
+    @NotEmpty(message = "Фамилия не может быть пустой")
+    @Size(min = 2, max = 30, message = "Фамилия должна быть от 2 до 30 символов")
     @Column(name = "surname", length = 50, nullable = false)
     private String surname;
+
+    @Min(value = 0, message = "Возраст не может быть меньше 0")
     @Column(name = "age", nullable = false)
     private int age;
-    @Column(name = "phoneNumber", nullable = false)
+
+    @NotEmpty(message = "Номер телефона не может быть пустой")
+    @Column(name = "phone_number", nullable = false)
     private String phoneNumber;
+
+    @NotEmpty(message = "Email не может быть пустой")
+    @Email(message = "Email указан не верно")
     @Column(name = "email", nullable = false)
     private String email;
 

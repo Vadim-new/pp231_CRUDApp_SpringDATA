@@ -9,7 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c8ce321-aae2-4ed6-8e7b-4a693389c203" name="Changes" comment="" />
+    <list default="true" id="0c8ce321-aae2-4ed6-8e7b-4a693389c203" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controllers/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newUser.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +198,7 @@
       <workItem from="1659429343800" duration="2123000" />
       <workItem from="1659431501540" duration="4836000" />
       <workItem from="1659436370768" duration="164000" />
-      <workItem from="1659436898927" duration="7328000" />
+      <workItem from="1659436898927" duration="11946000" />
     </task>
     <task id="LOCAL-00001" summary="all done">
       <created>1659457585167</created>
@@ -208,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659457722296</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hbm2ddl.auto=create">
+      <created>1659458166833</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659458166833</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +229,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="all done" />
-    <option name="LAST_COMMIT_MESSAGE" value="all done" />
+    <MESSAGE value="hbm2ddl.auto=create" />
+    <option name="LAST_COMMIT_MESSAGE" value="hbm2ddl.auto=create" />
   </component>
 </project>
