@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Список пользователей</title>
+</head>
+<body th:align="center">
+<table th:align="center" th:border="1" th:width="900">
+    <caption><h2>Список пользователей</h2></caption>
+    <thead>
+    <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Возраст</th>
+        <th>Телефон</th>
+        <th>Email</th>
+        <th>Редактировать</th>
+        <th>Удалить</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="user : ${listOfUsers}">
+        <tr>
+            <th th:text="${user.getName()}" ></th>
+            <th th:text="${user.getSurname()}"></th>
+            <th th:text="${user.getAge()}"></th>
+            <th th:text="${user.getPhoneNumber()}"></th>
+            <th th:text="${user.getEmail()}"></th>
+            <th>
+                <form th:method="GET" th:action="@{/users/{id}/edit(id=${user.getId()})}">
+                    <input type="submit" value="Редактировать"/>
+                </form>
+            </th>
+            <th>
+                <form th:method="DELETE" th:action="@{/users/{id}(id=${user.getId()})}">
+                    <input type="submit" value="Удалить"/>
+                </form>
+            </th>
+        </tr>
+    </th:block>
+    </tbody>
+</table>
+<br>
+<form th:method="GET" th:action="@{/users/new}">
+    <input type="submit" value="Добавить нового пользователя"/>
+</form>
+</body>
+</html>
