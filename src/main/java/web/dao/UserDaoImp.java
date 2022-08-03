@@ -1,5 +1,7 @@
 package web.dao;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import web.models.User;
@@ -9,6 +11,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
+@Scope(proxyMode = ScopedProxyMode.INTERFACES)
 @Transactional
 public class UserDaoImp implements UserDao {
 

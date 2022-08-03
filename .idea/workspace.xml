@@ -10,14 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c8ce321-aae2-4ed6-8e7b-4a693389c203" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/dao/UserDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/service/UserServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/web/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controllers/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/repositories/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/dao/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/dao/UserDaoImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +198,7 @@
       <workItem from="1659431501540" duration="4836000" />
       <workItem from="1659436370768" duration="164000" />
       <workItem from="1659436898927" duration="12719000" />
-      <workItem from="1659524607594" duration="5891000" />
+      <workItem from="1659524607594" duration="6831000" />
     </task>
     <task id="LOCAL-00001" summary="all done">
       <created>1659457585167</created>
@@ -233,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659465838303</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="no SpringDATA">
+      <created>1659530569017</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659530569017</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +245,7 @@
     <MESSAGE value="all done" />
     <MESSAGE value="hbm2ddl.auto=create" />
     <MESSAGE value="hibernate.validator added" />
-    <option name="LAST_COMMIT_MESSAGE" value="hibernate.validator added" />
+    <MESSAGE value="no SpringDATA" />
+    <option name="LAST_COMMIT_MESSAGE" value="no SpringDATA" />
   </component>
 </project>

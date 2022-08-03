@@ -22,10 +22,8 @@ public class UsersController {
     }
 
     @GetMapping("/")
-    public String getUserList(Model model) {
-        List<User> listOfUsers = userServiceImp.findAll();
-        model.addAttribute("listOfUsers", listOfUsers);
-        return "users";
+    public String gotoUsers() {
+        return "redirect:/users";
     }
 
     @GetMapping("/users")
