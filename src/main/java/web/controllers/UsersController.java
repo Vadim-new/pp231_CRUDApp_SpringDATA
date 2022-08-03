@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import web.models.User;
-import web.service.UserService;
+import web.service.UserServiceImp;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -14,23 +14,23 @@ import java.util.List;
 @Controller
 public class UsersController {
 
-    private UserService userService;
+    private UserServiceImp userServiceImp;
 
     @Autowired
-    public UsersController(UserService userService) {
-        this.userService = userService;
+    public UsersController(UserServiceImp userServiceImp) {
+        this.userServiceImp = userServiceImp;
     }
 
     @GetMapping("/")
     public String getUserList(Model model) {
-        List<User> listOfUsers = userService.findAll();
+        List<User> listOfUsers = userServiceImp.findAll();
         model.addAttribute("listOfUsers", listOfUsers);
         return "users";
     }
 
     @GetMapping("/users")
     public String getAllUsers(Model model) {
-        List<User> listOfUsers = userService.findAll();
+        List<User> listOfUsers = userServiceImp.findAll();
         model.addAttribute("listOfUsers", listOfUsers);
         return "users";
     }
@@ -44,13 +44,13 @@ public class UsersController {
     public String addNewUserPost(@ModelAttribute("user") @Valid User user,
                                  BindingResult bindingResult) {
         if (bindingResult.hasErrors()) return "newUser";
-        userService.save(user);
+        userServiceImp.save(user);
         return "redirect:/users";
     }
 
     @GetMapping("/users/{id}/edit")
     public String updateUserGet(@PathVariable("id") int id, Model model) {
-        User user = userService.findOne(id);
+        User user = userServiceImp.findOne(id);
         model.addAttribute("user", user);
         return "editUser";
     }
@@ -59,13 +59,13 @@ public class UsersController {
     public String updateUserPost(@ModelAttribute("user") @Valid User user,
                                  BindingResult bindingResult, @PathVariable("id") int id) {
         if (bindingResult.hasErrors()) return "editUser";
-        userService.update(id, user);
+        userServiceImp.update(id, user);
         return "redirect:/users";
     }
 
     @DeleteMapping("/users/{id}")
     public String deleteUser(@PathVariable("id") int id) {
-        userService.delete(id);
+        userServiceImp.delete(id);
         return "redirect:/users";
     }
 
