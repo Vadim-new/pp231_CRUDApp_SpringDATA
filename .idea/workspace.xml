@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c8ce321-aae2-4ed6-8e7b-4a693389c203" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/repo/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/service/UserServiceImp.java" afterDir="false" />
-    </list>
+    <list default="true" id="0c8ce321-aae2-4ed6-8e7b-4a693389c203" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,7 +202,7 @@
       <workItem from="1659524607594" duration="8214000" />
       <workItem from="1659622278236" duration="2261000" />
       <workItem from="1659631107010" duration="1739000" />
-      <workItem from="1659637864241" duration="2554000" />
+      <workItem from="1659637864241" duration="2843000" />
     </task>
     <task id="LOCAL-00001" summary="all done">
       <created>1659457585167</created>
@@ -251,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659531501710</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="SpringDATA">
+      <created>1659642826153</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659642826153</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +265,7 @@
     <MESSAGE value="hibernate.validator added" />
     <MESSAGE value="no SpringDATA" />
     <MESSAGE value="no SpringDATA update" />
-    <option name="LAST_COMMIT_MESSAGE" value="no SpringDATA update" />
+    <MESSAGE value="SpringDATA" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringDATA" />
   </component>
 </project>

@@ -3,7 +3,7 @@ package web.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import web.models.User;
+import web.model.User;
 import web.repo.UserRepo;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package web.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import web.models.User;
+import web.model.User;
 
 public interface UserRepo extends JpaRepository<User, Integer> {
 }
